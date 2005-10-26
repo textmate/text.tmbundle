@@ -6,26 +6,20 @@
 	<array>
 		<dict>
 			<key>command</key>
-			<string>moveToEndOfParagraph:</string>
-		</dict>
-		<dict>
-			<key>argument</key>
-			<string>.</string>
-			<key>command</key>
-			<string>insertText:</string>
+			<string>selectHardLine:</string>
 		</dict>
 		<dict>
 			<key>command</key>
-			<string>insertNewline:</string>
+			<string>deleteBackward:</string>
 		</dict>
 	</array>
 	<key>keyEquivalent</key>
-	<string>$@</string>
+	<string>^K</string>
 	<key>name</key>
-	<string>Move to EOL and Insert "." + LF</string>
-	<key>scope</key>
-	<string>text</string>
+	<string>Delete Current Line</string>
+	<key>scopeType</key>
+	<string>local</string>
 	<key>uuid</key>
-	<string>E86C9A77-5B48-43C6-A712-A61B616269E6</string>
+	<string>FB8960DB-AA2E-11D9-8E27-000D93589AF6</string>
 </dict>
 </plist>
