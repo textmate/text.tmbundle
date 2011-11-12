@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
 	<key>fileTypes</key>
@@ -61,18 +61,6 @@
 			<string>meta.paragraph.text</string>
 			<key>end</key>
 			<string>^(?!\1(?=\S))</string>
-			<key>patterns</key>
-			<array>
-				<dict>
-					<key>match</key>
-					<string>(?x)
-						( (https?|s?ftp|ftps|file|smb|afp|nfs|(x-)?man|gopher|txmt)://|mailto:)
-						[-:@a-zA-Z0-9_.,~%+/?=&amp;#]+(?&lt;![.,?:])
-					</string>
-					<key>name</key>
-					<string>markup.underline.link.text</string>
-				</dict>
-			</array>
 		</dict>
 	</array>
 	<key>scopeName</key>
