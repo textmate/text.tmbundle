@@ -5,16 +5,18 @@
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
 	<key>command</key>
-	<string>sort -fn|uniq</string>
+	<string>sort -rnf</string>
+	<key>fallbackInput</key>
+	<string>document</string>
 	<key>input</key>
 	<string>selection</string>
 	<key>keyEquivalent</key>
 	<string></string>
 	<key>name</key>
-	<string>Sort Lines &amp; Remove Duplicates</string>
+	<string>Reverse Sort Lines in Document / Selection</string>
 	<key>output</key>
 	<string>replaceSelectedText</string>
 	<key>uuid</key>
-	<string>3010E2A8-6E4F-11D9-A18D-000D93589AF6</string>
+	<string>273853DF-6E4F-11D9-A18D-000D93589AF6</string>
 </dict>
 </plist>
