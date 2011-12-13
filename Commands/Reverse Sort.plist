@@ -8,7 +8,9 @@
 	<string>#!/usr/bin/env bash
 [[ -f "${TM_SUPPORT_PATH}/lib/bash_init.sh" ]] &amp;&amp; . "${TM_SUPPORT_PATH}/lib/bash_init.sh"
 
-sort -f|uniq</string>
+sort -rf</string>
+	<key>fallbackInput</key>
+	<string>document</string>
 	<key>input</key>
 	<string>selection</string>
 	<key>inputFormat</key>
@@ -16,7 +18,7 @@ sort -f|uniq</string>
 	<key>keyEquivalent</key>
 	<string></string>
 	<key>name</key>
-	<string>Sort Lines &amp; Remove Duplicates</string>
+	<string>Reverse Sort Lines in Document / Selection</string>
 	<key>outputCaret</key>
 	<string>heuristic</string>
 	<key>outputFormat</key>
@@ -24,7 +26,7 @@ sort -f|uniq</string>
 	<key>outputLocation</key>
 	<string>replaceInput</string>
 	<key>uuid</key>
-	<string>3010E2A8-6E4F-11D9-A18D-000D93589AF6</string>
+	<string>0EFCB390-DCBB-4B52-90DF-665571C0C446</string>
 	<key>version</key>
 	<integer>2</integer>
 </dict>
