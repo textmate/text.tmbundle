@@ -10,6 +10,8 @@
 	<dict>
 		<key>disableIndentCorrections</key>
 		<string>1</string>
+		<key>indentOnPaste</key>
+		<string>simple</string>
 	</dict>
 	<key>uuid</key>
 	<string>29B976F9-853F-43FF-AA50-7A6A518EDC81</string>
