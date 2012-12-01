@@ -5,7 +5,7 @@
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
 	<key>command</key>
-	<string>sort -f|uniq</string>
+	<string>sort -fn|uniq</string>
 	<key>input</key>
 	<string>selection</string>
 	<key>keyEquivalent</key>

@@ -5,21 +5,18 @@
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
 	<key>command</key>
-	<string>open "$(cat)"
-</string>
+	<string>sort -rnf</string>
 	<key>fallbackInput</key>
-	<string>scope</string>
+	<string>document</string>
 	<key>input</key>
 	<string>selection</string>
 	<key>keyEquivalent</key>
-	<string></string>
+	<string></string>
 	<key>name</key>
-	<string>Open Current URL</string>
+	<string>Reverse Sort Lines in Document / Selection</string>
 	<key>output</key>
-	<string>discard</string>
-	<key>scope</key>
-	<string>markup.underline.link - markup.underline.link.relative</string>
+	<string>replaceSelectedText</string>
 	<key>uuid</key>
-	<string>5A08E461-05CC-4C03-9DC8-BF118594EA3E</string>
+	<string>0EFCB390-DCBB-4B52-90DF-665571C0C446</string>
 </dict>
 </plist>
