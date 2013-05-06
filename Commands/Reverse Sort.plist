@@ -18,7 +18,7 @@ sort -rf</string>
 	<key>keyEquivalent</key>
 	<string></string>
 	<key>name</key>
-	<string>Reverse Sort Lines in Document / Selection</string>
+	<string>Sort Document / Selection Descending</string>
 	<key>outputCaret</key>
 	<string>heuristic</string>
 	<key>outputFormat</key>

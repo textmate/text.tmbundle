@@ -18,7 +18,7 @@ sort -f</string>
 	<key>keyEquivalent</key>
 	<string></string>
 	<key>name</key>
-	<string>Sort Lines in Document / Selection</string>
+	<string>Sort Document / Selection Ascending</string>
 	<key>outputCaret</key>
 	<string>heuristic</string>
 	<key>outputFormat</key>
