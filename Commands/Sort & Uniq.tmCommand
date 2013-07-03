@@ -16,7 +16,7 @@ sort -f|uniq</string>
 	<key>keyEquivalent</key>
 	<string></string>
 	<key>name</key>
-	<string>Sort Lines &amp; Remove Duplicates</string>
+	<string>Sort Document / Selection &amp; Remove Duplicates</string>
 	<key>outputCaret</key>
 	<string>heuristic</string>
 	<key>outputFormat</key>

@@ -7,9 +7,10 @@
 	<key>command</key>
 	<string>#!/usr/bin/env bash
 [[ -f "${TM_SUPPORT_PATH}/lib/bash_init.sh" ]] &amp;&amp; . "${TM_SUPPORT_PATH}/lib/bash_init.sh"
-# ignore leading Blank, Dictionary sort (letter) caseless (F)
-sort -bdf
-</string>
+
+sort -rf</string>
+	<key>fallbackInput</key>
+	<string>document</string>
 	<key>input</key>
 	<string>selection</string>
 	<key>inputFormat</key>
@@ -17,7 +18,7 @@ sort -bdf
 	<key>keyEquivalent</key>
 	<string></string>
 	<key>name</key>
-	<string>Dictionary Sort Lines in Document / Selection</string>
+	<string>Sort Document / Selection Descending</string>
 	<key>outputCaret</key>
 	<string>heuristic</string>
 	<key>outputFormat</key>
@@ -25,7 +26,7 @@ sort -bdf
 	<key>outputLocation</key>
 	<string>replaceInput</string>
 	<key>uuid</key>
-	<string>AD73135F-6FC6-422F-970A-A96B01A8D321</string>
+	<string>0EFCB390-DCBB-4B52-90DF-665571C0C446</string>
 	<key>version</key>
 	<integer>2</integer>
 </dict>
