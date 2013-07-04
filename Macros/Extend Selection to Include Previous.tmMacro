@@ -15,8 +15,6 @@
 	</array>
 	<key>isDisabled</key>
 	<false/>
-	<key>keyEquivalent</key>
-	<string>^W</string>
 	<key>name</key>
 	<string>Extend Selection to Include Previous</string>
 	<key>scope</key>
