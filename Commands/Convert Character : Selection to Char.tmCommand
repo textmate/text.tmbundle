@@ -5,7 +5,7 @@
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
 	<key>command</key>
-	<string>#!/usr/bin/env ruby -wKU
+	<string>#!/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/bin/ruby -wKU
 print STDIN.read.split(" ").map { |e| [e.sub(/^0x/,"").hex].pack("U*") }.join</string>
 	<key>input</key>
 	<string>selection</string>
