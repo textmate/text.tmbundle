@@ -5,11 +5,11 @@
 	<key>name</key>
 	<string>Disable Indention Correction</string>
 	<key>scope</key>
-	<string>text - text source</string>
+	<string>text - (text source | text.html)</string>
 	<key>settings</key>
 	<dict>
 		<key>disableIndentCorrections</key>
-		<string>1</string>
+		<true/>
 		<key>indentOnPaste</key>
 		<string>simple</string>
 	</dict>
