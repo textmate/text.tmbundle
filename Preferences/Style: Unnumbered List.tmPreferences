@@ -13,7 +13,7 @@
 			<key>format</key>
 			<string>${0/\S/ /g}</string>
 			<key>match</key>
-			<string>\A\s*[-*]\s+</string>
+			<string>\A\s*([-*]\s+|(?=\w))</string>
 		</dict>
 	</dict>
 	<key>uuid</key>
