@@ -8,6 +8,7 @@
 	<string>#!/usr/bin/env bash
 [[ -f "${TM_SUPPORT_PATH}/lib/bash_init.sh" ]] &amp;&amp; . "${TM_SUPPORT_PATH}/lib/bash_init.sh"
 
+LANG=C
 sort -f</string>
 	<key>fallbackInput</key>
 	<string>document</string>
