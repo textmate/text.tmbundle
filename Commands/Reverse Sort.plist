@@ -5,10 +5,9 @@
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
 	<key>command</key>
-	<string>#!/usr/bin/env bash
-[[ -f "${TM_SUPPORT_PATH}/lib/bash_init.sh" ]] &amp;&amp; . "${TM_SUPPORT_PATH}/lib/bash_init.sh"
-
-sort -rf</string>
+	<string>#!/bin/sh
+LC_CTYPE="C" exec sort -rf
+</string>
 	<key>fallbackInput</key>
 	<string>document</string>
 	<key>input</key>
