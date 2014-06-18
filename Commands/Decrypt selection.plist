@@ -9,7 +9,7 @@
 [[ -f "${TM_SUPPORT_PATH}/lib/bash_init.sh" ]] &amp;&amp; . "${TM_SUPPORT_PATH}/lib/bash_init.sh"
 
 get_pw () {
-  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/bin/ruby -rui -e"print TextMate::UI.request_secure_string(:title =&gt; 'Decrypt AES 128 Encrypted Text', :prompt =&gt; '$1', :button1 =&gt; '$2', :button2 =&gt; 'Cancel').to_s"
+  ruby18 -rui -e"print TextMate::UI.request_secure_string(:title =&gt; 'Decrypt AES 128 Encrypted Text', :prompt =&gt; '$1', :button1 =&gt; '$2', :button2 =&gt; 'Cancel').to_s"
 }
 
 pw=$(get_pw 'What is the password?' Decrypt)

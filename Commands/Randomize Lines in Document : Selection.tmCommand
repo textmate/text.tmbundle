@@ -6,7 +6,7 @@
 	<string>nop</string>
 	<key>command</key>
 	<string>#!/bin/sh
-RUBY=/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/bin/ruby
+RUBY=ruby18
 "$RUBY" -pe'$_ = (rand * 100000000).round.to_s + "\t" + $_'|sort|cut -f2-
 </string>
 	<key>input</key>
