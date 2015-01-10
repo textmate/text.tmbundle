@@ -6,7 +6,7 @@
 	<string>nop</string>
 	<key>command</key>
 	<string>#!/bin/sh
-LC_CTYPE="C" exec sort -fu
+LC_CTYPE="C" exec sort -f | uniq
 </string>
 	<key>input</key>
 	<string>selection</string>
