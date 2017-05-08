@@ -25,7 +25,7 @@ spc_cnt = counts.map { |num| pretty(num).jcount(THIN_SPACE) }.max
 %w[ line word character ].each do |unit|
   cnt    = pretty(counts.shift)
   prefix = FIGURE_SPACE * (fig_cnt - cnt.jcount(FIGURES)) + THIN_SPACE * (spc_cnt - cnt.jcount(THIN_SPACE))
-  plural = cnt.to_i != 1 ? 's' : ''
+  plural = cnt.tr('^0123456789', '').to_i != 1 ? 's' : ''
   printf(" %s%s %s%s\n", prefix, cnt, unit, plural)
 end
 </string>
