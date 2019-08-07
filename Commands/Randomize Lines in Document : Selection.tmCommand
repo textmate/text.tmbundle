@@ -5,9 +5,12 @@
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
 	<key>command</key>
-	<string>#!/bin/sh
-RUBY=ruby18
-"$RUBY" -pe'$_ = (rand * 100000000).round.to_s + "\t" + $_'|sort|cut -f2-
+	<string>#!/bin/bash
+export LC_ALL=C
+while IFS= read -r line; do
+  read -rn 10 prefix &lt; &lt;(tr -dc '[:alnum:]' &lt; /dev/urandom)
+  printf '%s\t%s\n' "$prefix" "$line"
+done|sort|cut -f2-
 </string>
 	<key>input</key>
 	<string>selection</string>
