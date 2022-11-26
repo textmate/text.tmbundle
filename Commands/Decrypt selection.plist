@@ -6,6 +6,8 @@
 	<string>nop</string>
 	<key>command</key>
 	<string>#!/usr/bin/env bash
+STD_IN=$(</dev/stdin)
+
 [[ -f "${TM_SUPPORT_PATH}/lib/bash_init.sh" ]] &amp;&amp; . "${TM_SUPPORT_PATH}/lib/bash_init.sh"
 
 get_pw () {
@@ -15,7 +17,7 @@ get_pw () {
 pw=$(get_pw 'What is the password?' Decrypt)
 [[ -z "$pw" ]] &amp;&amp; exit_discard
 
-if ! openssl enc -d -aes128 -base64 -pass "pass:$pw"; then
+if ! echo $STD_IN | openssl enc -d -aes128 -a -pass "pass:$pw"; then
    exit_show_tool_tip
 fi
 </string>
