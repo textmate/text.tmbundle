@@ -11,14 +11,14 @@ STD_IN=$(</dev/stdin)
 [[ -f "${TM_SUPPORT_PATH}/lib/bash_init.sh" ]] &amp;&amp; . "${TM_SUPPORT_PATH}/lib/bash_init.sh"
 
 get_pw () {
-  ruby18 -rui -e"print TextMate::UI.request_secure_string(:title =&gt; 'Encrypt Text With AES 128', :prompt =&gt; '$1', :button1 =&gt; '$2', :button2 =&gt; 'Cancel').to_s"
+  ruby18 -rui -e"print TextMate::UI.request_secure_string(:title =&gt; 'Encrypt Text With AES 256', :prompt =&gt; '$1', :button1 =&gt; '$2', :button2 =&gt; 'Cancel').to_s"
 }
 pw1=$(get_pw 'What password should be used?'   Continue)
 [[ -z "$pw1" ]] &amp;&amp; exit_discard
 pw2=$(get_pw 'Enter password again to verify.' Encrypt)
 
 if [[ "$pw1" == "$pw2" ]];
-  then echo $STD_IN | openssl enc -e -aes128 -a -pass "pass:$pw1"
+  then echo $STD_IN|openssl enc -e -aes256 -md sha512 -a -A -pass "pass:$pw1"
   else exit_show_tool_tip 'Password mismatch! Please play again.'
 fi
 </string>
