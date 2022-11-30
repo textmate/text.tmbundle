@@ -17,7 +17,7 @@ get_pw () {
 pw=$(get_pw 'What is the password?' Decrypt)
 [[ -z "$pw" ]] &amp;&amp; exit_discard
 
-if ! echo $STD_IN|openssl enc -d -aes256 -md sha512 -a -A -pass "pass:$pw"; then
+if ! echo -n "$STD_IN"|base64 --decode|openssl enc -d -aes256 -md sha512 -pass "pass:$pw"; then
    exit_show_tool_tip
 fi
 </string>

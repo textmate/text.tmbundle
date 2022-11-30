@@ -18,7 +18,7 @@ pw1=$(get_pw 'What password should be used?'   Continue)
 pw2=$(get_pw 'Enter password again to verify.' Encrypt)
 
 if [[ "$pw1" == "$pw2" ]];
-  then echo $STD_IN|openssl enc -e -aes256 -md sha512 -a -A -pass "pass:$pw1"
+  then echo -n "$STD_IN"|openssl enc -e -aes256 -md sha512 -pass "pass:$pw1"|base64
   else exit_show_tool_tip 'Password mismatch! Please play again.'
 fi
 </string>
